@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.login-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.login-section{
+    padding : 50px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+form .btn-modify{
+    background-color: orange;
+}
+.google-facebook{
+    padding: 5px;
+    width: 215px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    transition:0.5s linear;
+}
+.google-facebook:hover{
+    background-color: orange;
+}
+
+.signin-signout{
+    padding: 5px;
+    width: 215px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    transition:0.5s linear;
+}
+.signin-signout:hover{
+    background-color: orange;
+}
+.btn-new-user{
+    width:150px;
+    border-radius: 15px;
+}
