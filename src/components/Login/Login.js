@@ -103,9 +103,9 @@ function Login() {
     return (
         <div className="login-container" >
 
-            {
+            {/* {
                 user.isSignIn ? <button className="signin-signout" onClick={signOut} >Sign Out</button> : <button className="signin-signout" onClick={googleSignIn} >Sign in</button>
-            }
+            } */}
 
 
             <br />
@@ -118,38 +118,20 @@ function Login() {
                         newUser && <input type="text" name="name" className="form-control" onBlur={handleBlur} placeholder="Enter your First Name" />
                     }
                     <br />
-                    {
-                        newUser && <input type="text" name="name" className="form-control" onBlur={handleBlur} placeholder="Enter your last Name" />
-                    }
-                    <br />
-                    {
-                        newUser && <input type="text" name="name" className="form-control" onBlur={handleBlur} placeholder="UserName or Email" />
-                    }
-                    <br />
-                    {
-                        newUser ?
-                            <input type="text" name='text' onBlur={handleBlur} className="form-control" placeholder="Confirm Password..." required />
 
-                            :
-                            <input type="text" name='email' onBlur={handleBlur} className="form-control" placeholder="Enter your email..." required />
-                    }
+                    <input type="text" name='email' onBlur={handleBlur} className="form-control" placeholder="Enter your email..." required />
                     <br />
-                    {
-                        newUser ?
-                            <input type="password" name='password' onBlur={handleBlur} className="form-control" placeholder="retype confirm password" required />
-
-                            : <input type="password" name='password' onBlur={handleBlur} className="form-control" placeholder="Enter your password" required />
-                    }
+                    <input type="password" name='password' onBlur={handleBlur} className="form-control" placeholder="Enter your password" required />
                     <br />
                     <input className="form-control btn-modify" type="submit" value={newUser ? ('Sign Up') : ('Sign In')} />
                     <br />
                     <button className="btn-modify" name="newUser" onClick={() => setNewUser(!newUser)} >  {newUser ? ('Sign In') : ('Create a new user')} </button>
                 </form>
 
-
+                <br />
                 <p style={{ color: 'red' }} > {user.error} </p>
                 {
-                    user.success && <p style={{ color: 'green' }} > User {newUser ? 'Create' : 'Logged in'} successfully </p>
+                    user.success && <p style={{ color: 'green' }} > User {user ? 'Create' : 'Logged in'} successfully </p>
                 }
             </div>
 
