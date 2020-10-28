@@ -6,9 +6,9 @@ This is a simple React hotel management project. This project very helpful to Ho
 
 ➢ Components :
 
-✓ Technology: React, React Bootstrap, React Router, HTML, CSS etc.
+      ✓ Technology: React, React Bootstrap, React Router, HTML, CSS etc.
 
-✓ Authentication: Google Firebase
+      ✓ Authentication: Google Firebase
 
 Site Link: https://objective-hawking-823ada.netlify.app/
 
